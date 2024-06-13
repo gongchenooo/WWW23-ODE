@@ -47,12 +47,16 @@ Code for (WWW'23) To Store or Not? Online Data Selection for Federated Learning 
       * `train`: json file
       * `test`: json file
 ## 2. Libraries
-torch 1.10.1
+torch >= 1.10.1
 tqdm
 PIL
 pandas 1.3.4
 numpy 1.20.3
 json
+matplotlib
+pickle
+args
+gc
 ## 3. Command
 * Baselines:
   * Commands:
