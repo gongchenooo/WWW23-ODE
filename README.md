@@ -1,4 +1,4 @@
-(WWW'23) To Store or Not? Online Data Selection for Federated Learning with Limited Storage
+Code for (WWW'23) To Store or Not? Online Data Selection for Federated Learning with Limited Storage
 ## 1. Structure
 * `Code/Baselines`: Implementation of 4 categories of baselines, including (1) Random Sampling (*FIFO* and *RS*), (2) Importance Sampling (*HighLoss, Gradient Norm*), (3) Data Selection for FL (*FedBalancer, Li*) and (4) FullData Setting (*FullData*)
   * `main.py`: main function of federated learning process
