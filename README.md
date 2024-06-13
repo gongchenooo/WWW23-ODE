@@ -33,7 +33,7 @@ Code for (WWW'23) To Store or Not? Online Data Selection for Federated Learning 
     * `log_reg.py`
   * `synthetic`: model of synthetic dataset
     * `log_reg.py`
-* `Data`: the directory for data storage. If you need the data, feel free to send email to gongchen@sjtu.edu.cn
+* `Data`: the directory for data storage. If you need the data, please refer to [link](https://drive.google.com/drive/folders/1JdCOcV5XiT4RtZbqkUoIMKVfs6Ti-GLz?usp=sharing) or send [email](gongchen@sjtu.edu.cn).
   * `synthetic`
     * `data`
       * `train`: json file
