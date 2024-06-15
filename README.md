@@ -1,4 +1,5 @@
-Code for (WWW'23) To Store or Not? Online Data Selection for Federated Learning with Limited Storage
+Code for (WWW'23) To Store or Not? Online Data Selection for Federated Learning with Limited Storage.
+Note that the network traffic classification dataset is possessed by Huawei company and thus we only provide the codes for three public datasets.
 ## 1. Structure
 * `Code/Baselines`: Implementation of 4 categories of baselines, including (1) Random Sampling (*FIFO* and *RS*), (2) Importance Sampling (*HighLoss, Gradient Norm*), (3) Data Selection for FL (*FedBalancer, Li*) and (4) FullData Setting (*FullData*)
   * `main.py`: main function of federated learning process
