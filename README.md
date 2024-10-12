@@ -111,7 +111,12 @@ gc
     * *Coor+Dream*: cross-client coordinated data storage + *Dream*
     * *Coor+Estimation1*: cross-client coordinated data storage + *Estimation1*
     * *Coor+Estimation2*: cross-client coordinated data storage + *Estimation2*
+    * *Coor+Dream* and *Coor+Estimation2* map to *ODE-exact* and *ODE-Est* in paper. As Coor+Estimation1 and Coor+Estimation2 exhibit different performances on various datasets (e.g. Coor+Estimation2 has better performance on FashionMNIST), we provide both of them to facilitate users in testing their own datasets.
   * Commands
     * `python main.py -dataset synthetic -model log_reg --num-rounds 1000 --eval-every 20 --clients-per-round 10 --seed 0 --num-epochs 5 -lr 0.0001 --choosing-method Coor+Dream --buffer-size 10`
     * `python main.py -dataset fashionmnist -model LeNet --num-rounds 1000 --eval-every 20 --clients-per-round 5 --seed 0 --num-epochs 5 -lr 0.001 --choosing-method Coor+Dream --buffer-size 10`
     * `python main.py -dataset HARBOX -model log_reg --num-rounds 1000 --eval-every 20 --clients-per-round 12 --seed 0 --num-epochs 5 -lr 0.001 --choosing-method Coor+Dream --buffer-size 10`
+
+# 4. Notice
+* As mentioned in Section 4.1 of our paper in WWW'23, we measure the training speedup by the ratio of the training rounds required for FIFO (or RS) and other methods to reach the same target accuracy (i.e., the final accuracy of FIFO or RS). This is because: despite our proposed ODE only adds the data evaluation process for non-participating clients and has little impact on the local training processes of participating clients, we implement all their actions in a serial manner rather than in parallel in our simulation experiments due to limited server memory. That means that the data evaluation time of non-participating clients is expected to overlap with the local training time of paritipating clients and using number of training rounds is more reasonable.
+* The values in our paper are averaged across around 5 experiments with different random seeds.
